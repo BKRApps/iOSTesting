@@ -13,7 +13,22 @@
 		F09CA37E2344EACC00342FB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F09CA37C2344EACC00342FB2 /* Main.storyboard */; };
 		F09CA3802344EACD00342FB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F09CA37F2344EACD00342FB2 /* Assets.xcassets */; };
 		F09CA3832344EACD00342FB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F09CA3812344EACD00342FB2 /* LaunchScreen.storyboard */; };
+		F09CA3AB2344F62800342FB2 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09CA3AA2344F62800342FB2 /* MockURLProtocol.swift */; };
+		F09CA3BA2344F64C00342FB2 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09CA3AA2344F62800342FB2 /* MockURLProtocol.swift */; };
+		F09CA3BD2344F6D100342FB2 /* ArticlesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09CA3BC2344F6D100342FB2 /* ArticlesViewModel.swift */; };
+		F09CA3BF2344F88800342FB2 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09CA3BE2344F88800342FB2 /* NetworkResult.swift */; };
+		F09CA3C12344FF2700342FB2 /* ArticleViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09CA3C02344FF2700342FB2 /* ArticleViewModelTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F09CA3B52344F64300342FB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F09CA36B2344EACC00342FB2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F09CA3722344EACC00342FB2;
+			remoteInfo = "iOSTesting-Techniques";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F09CA3732344EACC00342FB2 /* iOSTesting-Techniques.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOSTesting-Techniques.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +39,23 @@
 		F09CA37F2344EACD00342FB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F09CA3822344EACD00342FB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F09CA3842344EACD00342FB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F09CA3AA2344F62800342FB2 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		F09CA3B02344F64300342FB2 /* iOSTesting-TechniquesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOSTesting-TechniquesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F09CA3B42344F64300342FB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F09CA3BC2344F6D100342FB2 /* ArticlesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewModel.swift; sourceTree = "<group>"; };
+		F09CA3BE2344F88800342FB2 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		F09CA3C02344FF2700342FB2 /* ArticleViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F09CA3702344EACC00342FB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F09CA3AD2344F64300342FB2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				F09CA3752344EACC00342FB2 /* iOSTesting-Techniques */,
+				F09CA3B12344F64300342FB2 /* iOSTesting-TechniquesTests */,
 				F09CA3742344EACC00342FB2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				F09CA3732344EACC00342FB2 /* iOSTesting-Techniques.app */,
+				F09CA3B02344F64300342FB2 /* iOSTesting-TechniquesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +86,7 @@
 		F09CA3752344EACC00342FB2 /* iOSTesting-Techniques */ = {
 			isa = PBXGroup;
 			children = (
+				F09CA3BB2344F66800342FB2 /* NetworkCode */,
 				F09CA3762344EACC00342FB2 /* AppDelegate.swift */,
 				F09CA3782344EACC00342FB2 /* SceneDelegate.swift */,
 				F09CA37A2344EACC00342FB2 /* ViewController.swift */,
@@ -63,8 +94,27 @@
 				F09CA37F2344EACD00342FB2 /* Assets.xcassets */,
 				F09CA3812344EACD00342FB2 /* LaunchScreen.storyboard */,
 				F09CA3842344EACD00342FB2 /* Info.plist */,
+				F09CA3AA2344F62800342FB2 /* MockURLProtocol.swift */,
 			);
 			path = "iOSTesting-Techniques";
+			sourceTree = "<group>";
+		};
+		F09CA3B12344F64300342FB2 /* iOSTesting-TechniquesTests */ = {
+			isa = PBXGroup;
+			children = (
+				F09CA3B42344F64300342FB2 /* Info.plist */,
+				F09CA3C02344FF2700342FB2 /* ArticleViewModelTests.swift */,
+			);
+			path = "iOSTesting-TechniquesTests";
+			sourceTree = "<group>";
+		};
+		F09CA3BB2344F66800342FB2 /* NetworkCode */ = {
+			isa = PBXGroup;
+			children = (
+				F09CA3BC2344F6D100342FB2 /* ArticlesViewModel.swift */,
+				F09CA3BE2344F88800342FB2 /* NetworkResult.swift */,
+			);
+			path = NetworkCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +137,24 @@
 			productReference = F09CA3732344EACC00342FB2 /* iOSTesting-Techniques.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F09CA3AF2344F64300342FB2 /* iOSTesting-TechniquesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F09CA3B72344F64300342FB2 /* Build configuration list for PBXNativeTarget "iOSTesting-TechniquesTests" */;
+			buildPhases = (
+				F09CA3AC2344F64300342FB2 /* Sources */,
+				F09CA3AD2344F64300342FB2 /* Frameworks */,
+				F09CA3AE2344F64300342FB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F09CA3B62344F64300342FB2 /* PBXTargetDependency */,
+			);
+			name = "iOSTesting-TechniquesTests";
+			productName = "iOSTesting-TechniquesTests";
+			productReference = F09CA3B02344F64300342FB2 /* iOSTesting-TechniquesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +167,10 @@
 				TargetAttributes = {
 					F09CA3722344EACC00342FB2 = {
 						CreatedOnToolsVersion = 11.0;
+					};
+					F09CA3AF2344F64300342FB2 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = F09CA3722344EACC00342FB2;
 					};
 				};
 			};
@@ -116,6 +188,7 @@
 			projectRoot = "";
 			targets = (
 				F09CA3722344EACC00342FB2 /* iOSTesting-Techniques */,
+				F09CA3AF2344F64300342FB2 /* iOSTesting-TechniquesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +204,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F09CA3AE2344F64300342FB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,12 +219,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				F09CA37B2344EACC00342FB2 /* ViewController.swift in Sources */,
+				F09CA3BD2344F6D100342FB2 /* ArticlesViewModel.swift in Sources */,
 				F09CA3772344EACC00342FB2 /* AppDelegate.swift in Sources */,
+				F09CA3BF2344F88800342FB2 /* NetworkResult.swift in Sources */,
 				F09CA3792344EACC00342FB2 /* SceneDelegate.swift in Sources */,
+				F09CA3AB2344F62800342FB2 /* MockURLProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F09CA3AC2344F64300342FB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F09CA3BA2344F64C00342FB2 /* MockURLProtocol.swift in Sources */,
+				F09CA3C12344FF2700342FB2 /* ArticleViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F09CA3B62344F64300342FB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F09CA3722344EACC00342FB2 /* iOSTesting-Techniques */;
+			targetProxy = F09CA3B52344F64300342FB2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F09CA37C2344EACC00342FB2 /* Main.storyboard */ = {
@@ -316,6 +416,46 @@
 			};
 			name = Release;
 		};
+		F09CA3B82344F64300342FB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C8STGDD3H7;
+				INFOPLIST_FILE = "iOSTesting-TechniquesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ios.testing.iOSTesting-TechniquesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSTesting-Techniques.app/iOSTesting-Techniques";
+			};
+			name = Debug;
+		};
+		F09CA3B92344F64300342FB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C8STGDD3H7;
+				INFOPLIST_FILE = "iOSTesting-TechniquesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ios.testing.iOSTesting-TechniquesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSTesting-Techniques.app/iOSTesting-Techniques";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -333,6 +473,15 @@
 			buildConfigurations = (
 				F09CA3882344EACD00342FB2 /* Debug */,
 				F09CA3892344EACD00342FB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F09CA3B72344F64300342FB2 /* Build configuration list for PBXNativeTarget "iOSTesting-TechniquesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F09CA3B82344F64300342FB2 /* Debug */,
+				F09CA3B92344F64300342FB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
