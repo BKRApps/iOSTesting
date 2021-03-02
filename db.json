@@ -1,0 +1,24 @@
+{
+  "contacts": [
+    {
+      "name": "Kumar Reddy",
+      "email": "k@gmail.com",
+      "mobile-number": "9908123456"
+    },
+    {
+      "name": "Kumar Reddy",
+      "email": "k@gmail.com",
+      "mobile-number": "9908123456"
+    },
+    {
+      "name": "Kumar Reddy",
+      "email": "k@gmail.com",
+      "mobile-number": "9908123456"
+    },
+    {
+      "name": "Kumar Reddy",
+      "email": "k@gmail.com",
+      "mobile-number": "9908123456"
+    }
+  ]
+}
